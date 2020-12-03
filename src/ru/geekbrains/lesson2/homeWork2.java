@@ -19,7 +19,6 @@ public class homeWork2 {
         minAndMaxInArray(minMax);
         int[] summ = {1, 2, 1, 1, 1};
         System.out.println(summLeftAndRightAreEqual(minMax));
-        moveArrayLeftOrRight(minMax, 3);
     }
     public static void fillTheArray(int a) {
         int[] arr = new int[a];
