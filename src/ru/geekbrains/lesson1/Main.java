@@ -14,7 +14,6 @@ public class Main {
 		String str = "Вася";
 		System.out.println(calculate(3.6f, 7.9f, 30.6f, 9.9f));
 		System.out.println(sumBetween(69, 5));
-		System.out.println(negative(-8));
 		printName(str);
 		leapYear(1900);
 
@@ -40,7 +39,6 @@ public class Main {
 			System.out.println("Число положительное");
 		}
 	}
-
 	public static boolean negative (int number) {
 		return number < 0;
 		}
