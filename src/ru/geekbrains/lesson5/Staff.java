@@ -2,8 +2,6 @@ package ru.geekbrains.lesson5;
 
 public class Staff {
     private String name;
-    private String surname;
-    private String patronymic;
     private String position;
     private String email;
     private String telephoneNumber;
@@ -25,22 +23,6 @@ public class Staff {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getPatronymic() {
-        return patronymic;
-    }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
     }
 
     public String getPosition() {
@@ -94,11 +76,15 @@ public class Staff {
         staffArray[1] = new Staff("Harry Watts ", "Art critic ", "aojv@mail.ru ", "82679650244 ", 54000, 30);
         staffArray[2] = new Staff("Meredith  Moore ", "Endocrinologist ", "kggfpxw@yandex.ru ", "83026807023 ", 30000, 69);
         staffArray[3] = new Staff("Myra Garrett ", "Manager ", "f9jxjd14@gmail.com ", "86710435693 ", 69000, 45);
-        staffArray[3] = new Staff("Sophie Neal ", "Driver ", "xl9bc5@gmail.com ", "85267441942 ", 90000, 32);
-        staffArray[3] = new Staff("Alan Wilcox ", "Statistician ", "copaa6@gmail.com ", " 89042904894 ", 78000, 19);
+        staffArray[4] = new Staff("Sophie Neal ", "Driver ", "xl9bc5@gmail.com ", "85267441942 ", 90000, 32);
+
 
         staffArray[3].printInfo();
-         for 
+         for(int i = 0; i < 5; i++) {
+             if(staffArray[i].getAge() > 40) {
+                 staffArray[i].printInfo();
+             }
+         }
     }
 
 
